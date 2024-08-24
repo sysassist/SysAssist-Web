@@ -1,5 +1,6 @@
 /* Font Family */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* RESET PART OF THE WEB PAGE */
 /* Universal Selector */
@@ -22,13 +23,13 @@
 
 /* tag selector */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--primary-text-color);
   background-color: var(--background-color);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 
 h2 {
@@ -40,8 +41,8 @@ h3 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 1rem;
   color: var(--secondary-text-color);
   line-height: 1.8r;
 }
@@ -127,27 +128,21 @@ ul {
   color: var(--accent-color) !important;
 }
 
-/* Top banner */
-.top-banner {
-  background-color: #0b978e;
-  background-size: 300px;
-}
-
-.banner-text {
-  color: white;
-  padding: 15px 30px;
-  text-align: center;
-}
-
-
 /* nav bar */
 .main-nav {
-  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-block: 5px;
+  padding-inline: 11%;
+  background-color: var(--background-color);
   justify-content: space-between;
+  z-index: 100;
 }
 
 .company-logo img {
-  width: 100px;
+  width: 80px;
   border-radius: 50%;
 }
 
@@ -159,6 +154,7 @@ ul {
   justify-content: end;
   gap: 40px;
 }
+
 .nav-links .icons {
   display: none;
 }
@@ -171,17 +167,18 @@ header {
 .header-section {
   justify-content: center;
   gap: 50px;
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 
 .header-left {
-  max-width: 40vw;
+  max-width: 100vw;
 }
 
-.header-left h3 {
+.header-left h1,
+p,
+a {
   margin-top: 20px;
-  font-size: 1.2rem;
-  line-height: 2rem;
 }
 
 .get-started-btn {
@@ -219,6 +216,7 @@ header {
   background-position: center;
   background-color: #ffffff;
   color: var(--third-text-color);
+ 
 }
 
 .services-header {
@@ -236,24 +234,53 @@ header {
   margin-top: 20px;
   padding-bottom: 20px;
 }
-
-/* Services card */
-.services-card {
-  flex-direction: column;
-  gap: 20px;
-  max-width: 40%;
-  /* text-align: center; */
-}
-.list-items li{
+.container-one li {
+  margin-left: 5px;
   list-style: circle;
   color: var(--accent-color-dark);
 }
-.services-card img {
-  width: 50px;
+/* new container classes */
+.main-card-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  padding-bottom: 30px;
 }
 
-.services-card p {
+.container-one {
+  width: 400px;
+  min-height: 350px;
+  background-color: #fffded;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 4px #d4ecff;
+}
+
+.container-one h3,
+p,
+h4 {
+  margin: 5px;
+  padding: 5px;
+}
+
+.container-one p {
   color: var(--accent-color-dark);
+}
+
+.container-one:hover {
+  box-shadow: 1px 1px 8px #d4ecff;
+  transform: translateY(-5px);
+  background-color: #f9fdff;
+  cursor: pointer;
+}
+
+.container-one img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 /* Big Blog section */
@@ -336,9 +363,10 @@ header {
 /* Career section */
 .career-section-container {
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
   color: white;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .career-section {
@@ -379,15 +407,19 @@ p {
 .product-item ul {
   gap: 20px;
   align-items: flex-start;
-  flex-direction: column;
 }
 
 .product-item ul li a {
   color: #061d29;
+  margin: 11px;
+}
+
+.product-item ul li a i {
+  margin-right: 10px;
 }
 
 .product-item h3 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 /* Sub footer section */
@@ -399,14 +431,16 @@ p {
   justify-content: center;
   gap: 30px;
 }
+
 /* CSS for Staffing */
-.staffing-list{
+.staffing-list {
   display: flex;
   text-align: center;
   gap: 20px;
   flex-direction: column;
 }
-.img{
+
+.img {
   width: 100px;
 }
 
@@ -451,11 +485,12 @@ p {
   .nav-links ul {
     display: none;
   }
+
   .nav-links .icons {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
   }
 
   .header-section {
