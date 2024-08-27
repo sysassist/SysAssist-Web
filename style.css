@@ -167,7 +167,7 @@ header {
 .header-section {
   justify-content: center;
   gap: 50px;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 20px;
 }
 
@@ -178,6 +178,10 @@ header {
 .header-left h1,
 p {
   margin-top: 20px;
+}
+.header-left p{
+  color: lightblue;
+  margin-left: 0px;
 }
 
 .get-started-btn {
@@ -270,7 +274,7 @@ p {
 
 .services-area {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 40px;
   margin-top: 20px;
   padding-bottom: 20px;
@@ -475,7 +479,7 @@ p {
 }
 
 /* CSS for Staffing */
-.staffing-list {
+/* .staffing-list {
   display: flex;
   text-align: center;
   gap: 20px;
@@ -484,6 +488,41 @@ p {
 
 .img {
   width: 100px;
+} */
+
+.staffing-box {
+  padding-bottom: 30px;
+}
+.boxes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+  background-color: #e1ebf5;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.boxes:hover{
+  background-color: #006e75;
+  color: white;
+  cursor: pointer;
+}
+.boxes h4 {
+  font-size: 1.2rem;
+}
+
+.boxes img{
+  width: 60px;
+  border-radius: 10%;
+  background-size: cover;
+  margin-block: 10px;
+  margin-inline: 20px;
+}
+
+.location-img img{
+ width: 500px;
+ border-radius: 20px;
 }
 
 
@@ -575,5 +614,8 @@ p {
     gap: 20px;
     padding: 40px;
   }
+  .location-img img{
+    width: 350px;
+   }
 
 }
