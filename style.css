@@ -176,8 +176,7 @@ header {
 }
 
 .header-left h1,
-p,
-a {
+p {
   margin-top: 20px;
 }
 
@@ -210,6 +209,48 @@ a {
 
 /* Services Section */
 
+.services-section {
+  padding: 80px var(--padding-inline-section) 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  color: var(--third-text-color);
+}
+
+.services-header {
+  text-align: center;
+}
+
+.services-heading-text {
+  margin-bottom: 20px;
+}
+
+.services-area {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Services card */
+.services-card {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 40%;
+  background-color: #e1ebf5;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.services-card img {
+  width: 50px;
+}
+
+.services-card p {
+  color: var(--accent-color-dark);
+}
+
+/* Services Section */
 .services-section {
   padding: 80px var(--padding-inline-section) 0;
   background-repeat: no-repeat;
@@ -383,7 +424,7 @@ h4 {
 
 /* footer section */
 footer {
-  padding-block: 80px;
+  padding-block: 50px;
   background-color: #fffded;
   color: #061d29;
 }
@@ -407,6 +448,7 @@ p {
 .product-item ul {
   gap: 20px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .product-item ul li a {
@@ -457,7 +499,7 @@ p {
   }
 
   .services-card {
-    max-width: 40%;
+    max-width: 45%;
   }
 
   .examples-area {
