@@ -1,11 +1,11 @@
-ṇ<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SysAssist IT Solution</title> 
+  <title>SysAssist IT Solution</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="./images/SysAssist_logo.png" type="image/x-icon" />
   <link rel="stylesheet"
@@ -13,27 +13,31 @@
 </head>
 
 <body>
-
   <!-- Nav bar -->
-  <nav>
-    <div class="main-nav flex">
-      <a href="index.html" class="company-logo">
+  <header id="navbar">
+    <nav class="navbar-container container">
+      <a href="index.html" class="home-link">
+        <div class="navbar-logo">
         <img src="SysAssist_Final_Logo.png" alt="company-logo" />
-      </a>
-      <div class="nav-links">
-        <ul id="list" class="flex">
-          <li><a class="hover-link" href="Consulting.html">IT Consulting</a></li>
-          <li><a class="hover-link" href="staffing.html ">IT Staffing</a></li>
-          <li><a class="hover-link" href="aboutus.html">About Us</a></li>
-          <li><a class="hover-link" href="contact.html">Contact Us</a></li>
-        </ul>
-        <div class="icons"><span onclick="OpenMenu()" class="material-symbols-rounded">
-            menu_open
-          </span>
         </div>
+        
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li><a class="navbar-link" href="Consulting.html">IT Consulting</a></li>
+          <li><a class="navbar-link" href="staffing.html">IT Staffing</a></li>
+          <li><a class="navbar-link" href="aboutus.html">About Us</a></li>
+          <li><a class="navbar-link" href="contact.html">Contact Us</a></li>
+        </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  
   <!-- Header section -->
   <header>
     <div class="container header-section flex">
@@ -66,9 +70,11 @@
         <div class="container-one">
           <img src="images/custome application.avif" alt="Image not avilable">
           <h3>Custom/Bespoke Applications Development</h3>
-          <p>In today’s fast-paced digital landscape, off-the-shelf solutions often fall short of meeting unique business
+          <p>In today’s fast-paced digital landscape, off-the-shelf solutions often fall short of meeting unique
+            business
             needs. That’s where our Custom/Bespoke Applications Development service comes into play. We specialize in
-            designing and building tailor-made software solutions that align perfectly with your organization’s objectives
+            designing and building tailor-made software solutions that align perfectly with your organization’s
+            objectives
             and processes.</p>
         </div>
         <div class="container-one">
@@ -85,19 +91,29 @@
         <div class="container-one">
           <img src="images/image3.webp" alt="Image not avilable">
           <h3>Cloud Migration of Existing Applications</h3>
-          <p>In an era where agility and scalability are paramount, migrating your existing applications to the cloud is a strategic move that can redefine how your business operates. Whether you’re looking to migrate new applications or transition existing ones, our expert cloud migration services ensure a seamless shift to public or private cloud environments, tailored to your specific needs.</p>  </div>
-      
-      <div class="container-one">
-        <img src="images/image4.jpeg" alt="Image not avilable">
-        <h3>Quality Assurance Services and Automations</h3>
-        <p>In today’s competitive market, delivering high-quality software is a necessity. Our comprehensive Quality Assurance (QA) services ensure that your applications meet the highest standards of functionality, performance, and security. With a focus on both manual and automated testing, we help you deliver reliable, efficient, and secure software solutions.</p>
+          <p>In an era where agility and scalability are paramount, migrating your existing applications to the cloud is
+            a strategic move that can redefine how your business operates. Whether you’re looking to migrate new
+            applications or transition existing ones, our expert cloud migration services ensure a seamless shift to
+            public or private cloud environments, tailored to your specific needs.</p>
+        </div>
+
+        <div class="container-one">
+          <img src="images/image4.jpeg" alt="Image not avilable">
+          <h3>Quality Assurance Services and Automations</h3>
+          <p>In today’s competitive market, delivering high-quality software is a necessity. Our comprehensive Quality
+            Assurance (QA) services ensure that your applications meet the highest standards of functionality,
+            performance, and security. With a focus on both manual and automated testing, we help you deliver reliable,
+            efficient, and secure software solutions.</p>
+        </div>
+        <div class="container-one">
+          <img src="images/image5.avif" alt="Image not avilable">
+          <h3>Automation of Build, Test, Deployment Processes</h3>
+          <p>Automating your build, test, and deployment processes can significantly streamline your workflow, reduce
+            errors, and accelerate time-to-market. Our comprehensive automation services are designed to optimize your
+            development lifecycle, ensuring that your software is delivered faster, more reliably, and with higher
+            quality.</p>
+        </div>
       </div>
-      <div class="container-one">
-        <img src="images/image5.avif" alt="Image not avilable">
-        <h3>Automation of Build, Test, Deployment Processes</h3>
-        <p>Automating your build, test, and deployment processes can significantly streamline your workflow, reduce errors, and accelerate time-to-market. Our comprehensive automation services are designed to optimize your development lifecycle, ensuring that your software is delivered faster, more reliably, and with higher quality.</p>
-      </div>
-    </div>
       <!-- add here -->
     </div>
   </section>
@@ -136,6 +152,7 @@
 
   <!-- Font Icon Kit  -->
   <script src="https://kit.fontawesome.com/7bebb80bc0.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
