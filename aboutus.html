@@ -2,89 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./images/SysAssist_logo.png" type="image/x-icon" />
-    <link rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./images/SysAssist_logo.png" type="image/x-icon" />
+  <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
 
-      <!-- Nav bar -->
-      <nav>
-        <div class=" main-nav flex">
-          <a href="index.html" class="company-logo">
-            <img src="SysAssist_Final_Logo.png" alt="company-logo" />
-          </a>
-          <div class="nav-links">
-            <ul id="list" class="flex">
-                <li><a class="hover-link" href="Consulting.html">IT Consulting</a></li>
-                <li><a class="hover-link" href="staffing.html ">IT Staffing</a></li>
-                <li><a class="hover-link" href="aboutus.html">About Us</a></li>
-                <li><a class="hover-link" href="contact.html">Contact Us</a></li>
-            </ul>
-            <div class="icons"><span onclick="OpenMenu()" class="material-symbols-rounded">
-              menu_open
-              </span>
-             </div>
-          </div>
+  <!-- Nav bar -->
+  <header id="navbar">
+    <nav class="navbar-container container">
+      <a href="index.html" class="home-link">
+        <div class="navbar-logo">
+          <img src="SysAssist_Final_Logo.png" alt="company-logo" />
         </div>
-      </nav>
-           <!-- Header section -->
-           <header>
-            <div class="container header-section flex">
-              <div class="header-left">
-                <!-- <h1>Unlock Innovation with Our Cutting-Edge Solutions.</h1> -->
-                <h1>
-                  SysAssist is an IT solutions company committed to delivering high-quality, timely, and cost-effective services. 
-                </h1>
-                <p>We specialize in offering comprehensive software solutions tailored to the diverse needs of our clients.</p>
-                <a href="aboutus.html" class="primary-btn">About Us</a>
-              </div>
-              <div class="header-right">
-                <img src="./images/sysassist-hero-img.png" alt="hero-img" />
-              </div>
-            </div>
-          </header>
-        
-    <section class="big-blog-section" id="blog">
-        <div class="container flex big-blog-container">
-            <div class="big-blog-left">
-                <img class="img" src="Vijay_Dwivedi_Passport_Photo.jpg" alt="" />
-            </div>
-            <div class="big-blog-right flex">
-                <h4>Director - Vijay Dwivedi</h4>
-                <p>
-                    Vijay Dwivedi is a computer science post graduate with 30+ years of software industry experience. He is a seasoned IT professional with over 30 years of experience in database administration, primarily focused on Oracle Databases and MS SQL Server. He has a strong background in database design, implementation, performance tuning, and troubleshooting. With a 25+ year tenure serving the Government of Oman, he has contributed significantly to the One of Ministry's IT infrastructure. His expertise also extends to Oracle Application Servers and front-end tools.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="big-blog-section">
-        <div class="container flex big-blog-container">
-          <div class="big-blog-right flex">
-            <h4>Director -  Sanjay Agrawal</h4>
-                <p>
-                    Sanjay Agrawal is a computer science post graduate with 30+ years of software industry experience. He has been associated with senior management roles with multiple software companies providing payments services, telecom services and software development services to prestigious global clients. He has demonstrated success in establishing and managing offshore software development centers, delivering critical projects/products, underpinned by a strong grasp of technical and financial dimensions. He has spent about 25+ years in card payments solutions and about 3+ years in telecom network solutions.
-                </p>
-          </div>
-          <div class="big-blog-left">
-            <img src="agrawalji.png" alt="" />
-        </div>
-        </div>
-      </section>
-      <!-- Footer section -->
+
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu"
+        aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li><a class="navbar-link" href="Consulting.html">IT Consulting</a></li>
+          <li><a class="navbar-link" href="staffing.html">IT Staffing</a></li>
+          <li><a class="navbar-link" href="aboutus.html">About Us</a></li>
+          <li><a class="navbar-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Header section -->
+  <header>
+    <div class="container header-section flex">
+      <div class="header-left">
+        <!-- <h1>Unlock Innovation with Our Cutting-Edge Solutions.</h1> -->
+        <h1>
+          SysAssist is an IT solutions company committed to delivering high-quality, timely, and cost-effective
+          services.
+        </h1>
+        <p>We specialize in offering comprehensive software solutions tailored to the diverse needs of our clients.</p>
+        <a href="aboutus.html" class="primary-btn">About Us</a>
+      </div>
+      <div class="header-right">
+        <img src="./images/sysassist-hero-img.png" alt="hero-img" />
+      </div>
+    </div>
+  </header>
+
+  <section class="big-blog-section" id="blog">
+    <div class="container flex big-blog-container">
+      <div class="big-blog-left">
+        <img class="img" src="Vijay_Dwivedi_Passport_Photo.jpg" alt="" />
+      </div>
+      <div class="big-blog-right flex">
+        <h4>Director - Vijay Dwivedi</h4>
+        <p>
+          Vijay Dwivedi is a computer science post graduate with 30+ years of software industry experience. He is a
+          seasoned IT professional with over 30 years of experience in database administration, primarily focused on
+          Oracle Databases and MS SQL Server. He has a strong background in database design, implementation, performance
+          tuning, and troubleshooting. With a 25+ year tenure serving the Government of Oman, he has contributed
+          significantly to the One of Ministry's IT infrastructure. His expertise also extends to Oracle Application
+          Servers and front-end tools.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="big-blog-section">
+    <div class="container flex big-blog-container">
+      <div class="big-blog-right flex">
+        <h4>Director - Sanjay Agrawal</h4>
+        <p>
+          Sanjay Agrawal is a computer science post graduate with 30+ years of software industry experience. He has been
+          associated with senior management roles with multiple software companies providing payments services, telecom
+          services and software development services to prestigious global clients. He has demonstrated success in
+          establishing and managing offshore software development centers, delivering critical projects/products,
+          underpinned by a strong grasp of technical and financial dimensions. He has spent about 25+ years in card
+          payments solutions and about 3+ years in telecom network solutions.
+        </p>
+      </div>
+      <div class="big-blog-left">
+        <img src="agrawalji.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- Footer section -->
   <footer id="about">
     <div class="container flex footer-section">
-       <div class="product-item">
+      <div class="product-item">
         <h3>SysAssist It Solution Pvt. Ltd.</h3>
         <ul class="flex">
-          <li><a href="staffing.html" class="hover-link"><i class="fa-solid fa-file-circle-plus"></i>IT Staffing</a></li>
-          <li><a href="Consulting.html" class="hover-link"><i class="fa-solid fa-people-group"></i>IT Consulting</a></li>
+          <li><a href="staffing.html" class="hover-link"><i class="fa-solid fa-file-circle-plus"></i>IT Staffing</a>
+          </li>
+          <li><a href="Consulting.html" class="hover-link"><i class="fa-solid fa-people-group"></i>IT Consulting</a>
+          </li>
           <li><a href="aboutus.html" class="hover-link"><i class="fa-solid fa-address-card"></i>About Us</a></li>
           <li><a href="contact.html" class="hover-link"><i class="fa-solid fa-phone-volume"></i></i>Contact Us</a></li>
           <li><a href="#" class="hover-link"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
@@ -95,8 +114,8 @@
       </div>
     </div>
   </footer>
-   <!-- Font Icon Kit  -->
-   <script src="https://kit.fontawesome.com/7bebb80bc0.js" crossorigin="anonymous"></script>
+  <!-- Font Icon Kit  -->
+  <script src="https://kit.fontawesome.com/7bebb80bc0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
