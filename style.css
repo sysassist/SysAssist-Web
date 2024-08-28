@@ -558,7 +558,7 @@ h4 {
 
 /* footer section */
 footer {
-  padding-block: 50px;
+  padding-top: 50px;
   background-color: #fffded;
   color: #061d29;
 }
@@ -608,18 +608,6 @@ p {
   gap: 30px;
 }
 
-/* CSS for Staffing */
-/* .staffing-list {
-  display: flex;
-  text-align: center;
-  gap: 20px;
-  flex-direction: column;
-}
-
-.img {
-  width: 100px;
-} */
-
 .staffing-box {
   padding-bottom: 30px;
 }
@@ -655,6 +643,9 @@ p {
  border-radius: 20px;
 }
 
+.footer-links{
+  display: flex;
+}
 
 /* Media quiry for tablet device */
 @media screen and (max-width : 780px) {
@@ -738,6 +729,10 @@ p {
   .product-item h3 {
     margin-top: 30px;
   }
+  
+  .product-item ul {
+    gap: 8px;
+  }
 
   .logos {
     flex-wrap: nowrap;
@@ -747,5 +742,9 @@ p {
   .location-img img{
     width: 350px;
    }
+   .footer-links{
+    display: flex;
+    flex-direction: column; 
+  }
 
 }
