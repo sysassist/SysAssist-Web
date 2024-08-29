@@ -262,6 +262,78 @@ ul {
 #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
   padding: 1em;
 }
+/* Contact Form */
+/* Style the form container */
+.contect-datails .img {
+  height: 300px;
+  width: 500px;
+  background: url(images/location.jpg) center no-repeat;
+  background-size: cover;
+}
+.contect-datails p {
+  color: var(--third-text-color);
+  line-height: 1.8rem;
+}
+.form-container {
+  max-width: 500px;
+  /* margin: 10px auto; */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: lavender;
+}
+.form-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px 10px 20px 10px;
+}
+.label-text {
+ color: #CD5C08;
+}
+/* Style input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  resize: vertical;
+}
+.captcha-code {
+  display: flex;
+  max-width: 50%;
+}
+.captcha-code .captcha-input {
+  margin-right: 10px;
+}
+
+#captchaCode {
+  padding: 8px 20px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #CD5C08;
+}
+
+
 @media screen and (min-width: 700px) {
   #navbar-toggle,
   #navbar-toggle[aria-expanded="true"] {
@@ -573,11 +645,6 @@ footer {
   color: var(--third-text-color);
 }
 
-.contect-datails h4,
-p {
-  margin: 5px;
-  color: var(--third-text-color);
-}
 
 .product-item ul {
   gap: 20px;
@@ -638,11 +705,6 @@ p {
   margin-inline: 20px;
 }
 
-.location-img img{
- width: 500px;
- border-radius: 20px;
-}
-
 .footer-links{
   display: flex;
 }
@@ -678,6 +740,11 @@ p {
 
   .product-item h3 {
     margin-left: 40px;
+  }
+  .contect-datails .img {
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
   }
 
 }
@@ -739,9 +806,11 @@ p {
     gap: 20px;
     padding: 40px;
   }
-  .location-img img{
-    width: 350px;
-   }
+  .contect-datails .img {
+    width: 340px;
+    height: 200px;
+  }
+
    .footer-links{
     display: flex;
     flex-direction: column; 
