@@ -6,6 +6,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./images/SysAssist_logo.png" type="image/x-icon" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -40,7 +41,6 @@
        <header>
         <div class="container header-section flex">
           <div class="header-left">
-            <!-- <h1>Unlock Innovation with Our Cutting-Edge Solutions.</h1> -->
             <h1>
               SysAssist is an IT solutions company committed to delivering high-quality, timely, and cost-effective services. 
             </h1>
@@ -57,17 +57,35 @@
    <footer>
     <div class="container flex footer-section">
       <div class="contect-datails">
-        <p>SysAssist IT Solution Pvt. Ltd.</p>
-        <p>739, Sai Kripa Colony,</p>
-        <p>Sai Kripa Main Road 2,</p>
-        <p>Indore, Madhya Pradesh, India</p>
-        <p>PIN - 452010</p>
-        <p><strong>Phone:</strong> +91-9987986053</p>
-        <p><strong>Email:</strong> <a href="mailto:inquiry@sysassist.co">inquiry@sysassist.co</a></p>
-        <p><strong>Web:</strong> <a href="">www.sysassist.co</a></p>
+        <div class="img"></div>
+       <p>SysAssist IT Solution Pvt. Ltd. <br> 739, Sai Kripa Colony,
+       <br> Sai Kripa Main Road 2, <br>
+        Indore, Madhya Pradesh, India <br> PIN - 452010 <br>
+        <strong>Phone:</strong> +91-9987986053 <br>
+        <strong>Email:</strong> <a href="mailto:inquiry@sysassist.co">inquiry@sysassist.co</a>
+        <br><strong>Web:</strong> <a href="">www.sysassist.co</a>
+      </p>
       </div> 
-      <div class="location-img">
-        <img src="images/location.jpg" alt="">
+      <div class="form-container">
+        <h1>Contact with us</h1>
+        <form id="myForm">
+            <label class="label-text" for="first-name">First Name*</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label class="label-text" for="last-name">Last Name*</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <label class="label-text" for="email">Company Email*</label>
+            <input type="email" id="email" name="email" required>
+            <label class="label-text" for="contact-number">Contact Number*</label>
+            <input type="text" id="contact-number" name="contact-number" pattern="[0-9]{10}" required>
+            <label class="label-text" for="message">Please send a message to get the conversation started</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <label class="label-text" for="captcha">Enter the CAPTCHA code*</label>
+            <div class="captcha-code">
+              <input class="captcha-input" type="text" id="captcha" name="captcha" required>
+              <span id="captchaCode">1234</span>
+            </div>
+            <button type="submit">Submit Enquiry <i class="fa-solid fa-angle-right"></i> </button>
+        </form>
       </div>
     </div>
   </footer> 
@@ -94,5 +112,6 @@
 
  </section>
  <script src="app.js"></script>
+ <script src="contact.js"></script>
 </body>
 </html>
