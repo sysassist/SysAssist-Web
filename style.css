@@ -367,6 +367,9 @@ p {
 .services-card p {
   color: var(--accent-color-dark);
 }
+.services-header-sub-heading{
+  color: #000;
+}
 
 /* Services Section */
 .services-section {
