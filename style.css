@@ -781,8 +781,8 @@ footer {
 }
 
 .company-image-container {
-  width: 120px;
-  height: 100px;
+  width: 400px;
+  height: 400px;
   margin: 0 auto 15px;
   background-color: white;
   border-radius: 10px;
@@ -840,8 +840,8 @@ footer {
 }
 
 .director-image-container {
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 15px;
