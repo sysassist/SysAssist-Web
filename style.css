@@ -905,4 +905,12 @@ footer {
       width: 90%;
       max-width: 350px;
   }
+  .company-image-container {
+    width: 200px;
+    height: 200px;
+  }
+  .director-image-container {
+    width: 100px;
+  height: 100px;
+  }
 }
