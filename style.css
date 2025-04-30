@@ -659,3 +659,250 @@ footer {
   }
 
 }
+
+.main-containers{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.head{
+  text-align: center;
+  margin: 10px;
+}
+.testimonials-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: #006e75;
+  border-radius: 20px;
+  width: 340px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 5px solid white;
+  box-shadow: 0 0 0 5px #f0e9e7;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  height: 250px;
+  overflow: hidden;
+}
+
+.client-name {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.rating {
+  color: yellow;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+      width: 100%;
+  }
+}
+
+.partners-section {
+  padding: 60px 0;
+  background-color: #f9fafb;
+}
+
+.partners-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Partner Header */
+.partner-header {
+  padding: 30px 30px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-bottom: 1px solid #eaeaea;
+}
+
+.company-image-container {
+  width: 120px;
+  height: 100px;
+  margin: 0 auto 15px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.partner-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.partner-type {
+  color: #5c6ac4;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  padding: 4px 12px;
+  background-color: rgba(92, 106, 196, 0.1);
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Partner Content */
+.partner-content {
+  padding: 20px 30px;
+  flex-grow: 1;
+}
+
+.partner-description {
+  color: #555;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* Partner Director */
+.partner-director {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-top: 1px solid #eee;
+}
+
+.director-image-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.director-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.director-info {
+  flex-grow: 1;
+}
+
+.director-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.director-title {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Section Heading */
+.head {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.head:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #5c6ac4, #3f51b5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partners-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+  }
+  
+  .partner-card {
+      width: 90%;
+      max-width: 350px;
+  }
+}
